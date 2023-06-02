@@ -1,0 +1,279 @@
+/*Set background of the page to a gif*/
+body {
+    background-image: url("https://i.gifer.com/Uhwy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*Set the font of the page to be sans-serif*/
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: row;
+    gap: 20px;
+}
+
+
+/*Style the about-me section to be encapsulated in a vertical box*/
+.about-me {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0,21,36, 0.9);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    /*Make the box smaller on smaller screens*/
+    @media screen and (max-width: 600px) {
+        width: 80%;
+    }
+}
+/*Style the photo in about-me div to be circular and be positioned to the left of the container*/
+.about-me img {
+    border-radius: 50%;
+    display: flex;
+    float: left;
+    /*Add enough margin to be to the far left of the container*/
+    width: 150px;
+    height: 150px;
+    /*Make the photo smaller on smaller screens*/
+    @media screen and (max-width: 600px) {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.about-me h1{
+    font-weight: lighter;
+}
+
+.about-me li {
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: lighter;
+    /*Make the text smaller on smaller screens*/
+    @media screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+/*Get li class email and format bullet point to be a image of an envelope*/
+.email {
+    /*content is local and is called email.png*/
+    list-style-image: url("email.png");
+    /*Make the bullet point smaller on smaller screens*/
+    @media screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+.email a{
+    color: white;   
+    text-decoration: none;
+}
+
+.email a:hover{
+    color: #0077B5;
+    animation: pulse 1s infinite;
+}
+
+.linkedin{
+    /*content is local and is called linkedin.png*/
+    list-style-image: url("linkedin.png");
+    /*Make the bullet point smaller on smaller screens*/
+    @media screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+.linkedin a{
+    color: white;   
+    text-decoration: none;
+}
+
+/*For linkedin class add animation to the anchor when hovering over*/
+.linkedin a:hover{
+    color: #0077B5;
+    animation: pulse 1s infinite;
+}
+
+.phone{
+    /*content is local and is called phone.png*/
+    list-style-image: url("phone.png");
+    /*Make the bullet point smaller on smaller screens*/
+    @media screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+.location{
+    /*content is local and is called location.png*/
+    list-style-image: url("location.png");
+    /*Make the bullet point smaller on smaller screens*/
+    @media screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+.location a{
+    color: white;   
+    text-decoration: none;
+}
+
+.location a:hover{
+    color: #0077B5;
+    animation: pulse 1s infinite;
+}
+/*Style the projects section the same as about-me section but put it to the right of the about-me section*/
+
+.projects {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0,21,36, 0.9);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    /*Make the box smaller on smaller screens*/
+    @media screen and (max-width: 600px) {
+        width: 80%;
+    }
+
+   
+}
+
+.resume{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(0,21,36, 0.9);
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    /*Make the box smaller on smaller screens*/
+    @media screen and (max-width: 600px) {
+        width: 80%;
+    }
+}
+.about-me .projects .resume{
+    width: 50%; /* set the width of each section to 50% */
+    box-sizing: border-box; /* add this property to include padding and border in the element's total width and height */
+    padding: 20px; 
+}
+
+/* Add some gap between the three sections */
+.about-me .projects .resume{
+    margin: 10px;
+}
+
+.resume h1 a{
+    color: white;   
+    text-decoration: none;
+}
+.resume h1 a:hover{
+    color: #0077B5;
+    animation: pulse 1s infinite;
+}
+
+div.gradebook h2 a{
+    color: white;
+    text-decoration: none;
+    @media screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+div.gradebook h2{
+    font-weight: lighter;
+    @media screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+div.gradebook h2 a:hover{
+    color: #0077B5;
+    animation: pulse 1s infinite;
+}
+
+div.barchart h2 a{
+    color: white;
+    text-decoration: none;
+    @media screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+div.barchart h2{
+    font-weight: lighter;
+    @media screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+div.barchart h2 a:hover{
+    color: #0077B5;
+    animation: pulse 1s infinite;
+}
+
+div.work-experience h3{
+    font-weight: lighter;
+    @media screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+div.education h3{
+    font-weight: lighter;
+    @media screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+div.certifications li a{
+    color: white;
+    text-decoration: none;
+    @media screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+}
+
+div.certifications li a:hover{
+    color: #0077B5;
+    animation: pulse 1s infinite;
+}
+
+div.work-experience h3 a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    @media screen and (max-width: 600px) {
+        font-size: 10px;
+    }
+    font-style: italic;
+}
+
+div.work-experience h3 a:hover{
+    color: #0077B5;
+    animation: pulse 1s infinite;
+}
+
